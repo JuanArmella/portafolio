@@ -1,10 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     font-family: sans-serif;
 }
 
-h2{
-    margin-top: 0;
+h1, h2{
+    margin: 0;
 }
 
 #header{
@@ -26,6 +30,7 @@ h2{
     display: flex;
     justify-content: space-around;
     list-style: none;
+    align-items: center;
 }
 
 #navbar ul li a{
@@ -33,15 +38,101 @@ h2{
     color: white;
 }
 
+#navbar ul li a:hover{
+    color: rgb(74, 74, 240);
+}
+
 #about{
     width: 100%;
     height: 500px;
-    padding: 40px;
+    padding: 40px 0 40px 80px;
     background-color: rgb(10, 0, 27);
     color: white;
-    
-    /* background-image: url("/images/prg.jpg");
-    background-size: contain; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#about img{
+    width: 250px;
+}
+
+#about p{
+    width: 600px;
 }
 
 /* SECCION DE PROYECTOS */
+
+.projects{
+    width: 100%;
+    height: 800px;
+    padding: 40px 0 20px 60px;
+    background-color: #e9f0f1;
+}
+
+.projects h2{
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+/** SECCION DE TARJETAS */
+.contenedor-tarjetas{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tarjetas{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.tarjetas img{
+    width: 100%;
+    height: 200px;
+    
+    border-radius: 5px 5px 0 0;
+}
+
+.tarjetas h3{
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+
+.tarjetas p{
+    margin: 0;
+    padding: 15px;
+}
+
+/* SECCION DE FOOTER */
+#contact{
+    width: 100%;
+    height: 240px;
+    background-color: rgb(10, 0, 27);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-media{
+    display: flex;
+    list-style: none;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.social-media li a{
+    text-decoration: none;
+    color: white;
+}
+
+.social-media li a:hover{
+    color: rgb(74, 74, 240);
+}
